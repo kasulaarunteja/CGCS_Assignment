@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.Navbar{
+  width: 95%;
+  display:  flex;
+  gap : 30px;
+  margin: auto;
+  background-color: black;
+ 
+}
+
+img{
+  width: 110px;
+  height: 80px;
+  margin-top: 2px;
+}
+
+
+.title{
+  font-size: 17px;
+  color: red;
+  padding-top: 15px;
+}
+
+
+.links{
+  text-decoration: none ;
+}

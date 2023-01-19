@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../App.css";
+
 
 const Navbar = () => {
     return (
@@ -8,13 +10,13 @@ const Navbar = () => {
               <img className='img' src="imgs/marvel.jpg" alt=""/>
             </Link>
             <Link className='links' to={"/"}>
-                <p>Characters</p>
+                <p className="title">Characters</p>
             </Link>
             <Link className='links' to={"/comics"}>
-                <p>Comics</p>
+                <p className="title">Comics</p>
             </Link>
             <Link className='links' to={"/stories"}>
-                <p>Stories</p>
+                <p className="title">Stories</p>
             </Link>
         </div>
     );
