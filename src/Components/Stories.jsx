@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const Stories = () => {
-    return (
-        <div>
-            <h2>Stories</h2>
-        </div>
-    );
-}
+  return (
+    <div>
+      <div className="b">
+        <h1>Stories</h1>
+      </div>
+    </div>
+  );
+};
 
 export default Stories;
