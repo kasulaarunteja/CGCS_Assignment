@@ -7,7 +7,6 @@ const Characters = () => {
   const [hero, setHero] = useState([]);
   const [loding, setLoding] = useState(true);
 
-
   const getdata = () => {
     axios
       .get(
@@ -24,7 +23,8 @@ const Characters = () => {
     getdata();
   }, []);
 
-  return loding ? (  "loding...."
+  return loding ? (
+    "loding...."
   ) : (
     <>
       <div className="b">
@@ -33,22 +33,6 @@ const Characters = () => {
       <div className="main">
         {hero.map((e) => {
           return (
-            // <div className="maindiv">
-            //   <div className="card" key={e.id}>
-            //     <img
-            //       src={`${e.thumbnail.path}.${e.thumbnail.extension}`}
-            //       alt="Product Name"
-            //     />
-            //     <div className="container">
-            //       <h4>
-            //         <b>{e.name}</b>
-            //       </h4>
-            //       <p>{e.description}</p>
-            //     </div>
-            //     <button>Add to Cart</button>
-            //   </div>
-            // </div>
-
             <div className="box1">
               <div className="imgdiv">
                 <img
@@ -57,7 +41,7 @@ const Characters = () => {
                 />
               </div>
               <div className="titelcards">
-                <h4>{e.name}</h4>
+                <h3 key={e.id}>{e.name}</h3>
                 <p>Action figures from the pop culture landscape</p>
               </div>
               <div>
