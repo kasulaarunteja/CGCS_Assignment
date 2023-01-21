@@ -1,22 +1,22 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import {NavLink } from "react-router-dom";
 import "../App.css";
 
 const Navbar = () => {
   return (
     <div className="Navbar">
-      <Link>
+      <NavLink>
         <img className="img" src="imgs/marvel.jpg" alt="" />
-      </Link>
-      <Link className="links" to={"/"}>
-        <p className="title">Characters</p>
-      </Link>
-      <Link className="links" to={"/comics"}>
-        <p className="title">Comics</p>
-      </Link>
-      <Link className="links" to={"/stories"}>
-        <p className="title">Stories</p>
-      </Link>
+      </NavLink>
+      <NavLink id="link" to={"/"}>
+        Characters
+      </NavLink>
+      <NavLink id="link" to={"/comics"}>
+        Comics
+      </NavLink>
+      <NavLink id="link" to={"/stories"}>
+        Stories
+      </NavLink>
     </div>
   );
 };
